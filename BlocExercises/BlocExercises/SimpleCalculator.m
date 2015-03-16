@@ -12,17 +12,23 @@
 
 - (NSInteger) increaseNumberBy1:(NSInteger) number {
     /* WORK HERE */
-    return number;
+    NSInteger sourceNumber = number;
+    NSLog (@"A pre-increment makes newInteger: %ld", (NSInteger)++sourceNumber);
+    return sourceNumber;
 }
 
 - (NSInteger) addNumber:(NSInteger) number1 toNumber:(NSInteger) number2 {
     /* WORK HERE */
-    return number1;
+    NSInteger twenty = number1 + number2;
+    return twenty;
 }
 
 - (NSInteger) remainderOfNumber:(NSInteger) dividend dividedByNumber:(NSInteger) divisor {
     /* WORK HERE */
-    return 0;
+    NSInteger remainder = (dividend % divisor);
+    NSLog(@"integer value is: %ld", dividend % divisor);
+    return remainder;
+    
 }
 
 @end
